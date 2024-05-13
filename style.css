@@ -1,8 +1,14 @@
+/* THE SILLINESS */
+@font-face {
+    font-family: "myFont";
+    src: url("myFont.woff2");
+  }
+
 /* Header styling */
 .header {
     padding: 10px 16px;
-    background: #264653;
-    color: #ffffff;
+    background: #E76F51;
+    color: #264653;
   }
   
   /* Page content */
@@ -21,10 +27,11 @@
   .sticky + .content {
     padding-top: 102px;
   }
-.body {
+body {
     background-color: #E9C46A;
 }
 /* Body content styling */
 p {
-    color: red;
+    color: #2A9D8F;
+    font-size: 24px;
 }
