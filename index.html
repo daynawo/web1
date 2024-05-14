@@ -7,10 +7,35 @@
     <script src='script.js'></script>
     <title>Document</title>
 </head>
+
 <div class="header" id="myHeader">
     <h2>Welcome to Dayna's Website!</h2>
-  </div>
+</div>
+
 <body>
-    <p>POOPERS </p>
+    <ul class="menu">
+        <span id="icon" onclick="menu(this)">+</span>
+        <div id="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">More</a></li>
+        </div>
+    </ul>
+<script>
+    var element = document.getElementById("list");
+    function menu(icon){
+        if(x==0)
+        {
+            icon.style.transform = "rotate(45deg)";
+            element.classList.add("animate");
+            x=1;
+        }
+        else{
+            icon.style.transform = "rotate(0deg)";
+            element.classList.remove("animate");
+            x=0;
+        }
+    }
+</script>
 </body>
 </html>
