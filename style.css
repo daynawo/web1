@@ -1,70 +1,70 @@
-  /* Header styling */
-  .header {
-    padding: 10px 16px;
-    background: #E76F51;
-    color: #264653;
-  }
-  
-  /* Page content */
-  .content {
-    padding: 16px;
-  }
-  
-  /* The sticky class is added to the header with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-  }
-  
-  /* Add some top padding to the page content */
-  .sticky + .content {
-    padding-top: 102px;
-  }
+/* Header styling */
+.header {
+  padding: 10px 16px;
+  background: #E76F51;
+  color: #264653;
+}
 
-  body {
-    font-family: sans-serif;
-    background-color: #E9C46A;
-  }
+/* Page content */
+.content {
+  padding: 16px;
+}
 
-  .menu {
-    list-style: none;
-    color: #fff;
-    width: 150px;
-    text-align: center;
-  }
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
 
-  #icon {
-    cursor: pointer;
-    display: block;
-    background-color: #E76F51;
-    width: 50px;
-    padding: 8px 0px;
-    font-size: 30px;
-    margin: auto;
-    border-radius: 30px;
-    transition: all 0.3s;
-  }
+/* Add some top padding to the page content */
+.sticky+.content {
+  padding-top: 102px;
+}
 
-  #list {
-    background-color: #2A9D8F;
-    padding: 25px 0px;
-    border-radius: 14px;
-    margin-top: 20px;
-    transition: all 0.3s;
-    transform: scale(0);
-  }
+body {
+  font-family: sans-serif;
+  background-color: #E9C46A;
+}
 
-  #list li {
-    padding: 15px 0px;
-  }
+.menu {
+  list-style: none;
+  color: #fff;
+  width: 150px;
+  text-align: center;
+}
 
-  #list li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 14px;
-  }
+#icon {
+  cursor: pointer;
+  display: block;
+  background-color: #E76F51;
+  width: 50px;
+  padding: 8px 0px;
+  font-size: 30px;
+  margin: auto;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
 
-  .animate {
-    transform: scale(1) !important;
-  }
+#list {
+  background-color: #2A9D8F;
+  padding: 25px 0px;
+  border-radius: 14px;
+  margin-top: 20px;
+  transition: all 0.3s;
+  transform: scale(0);
+}
+
+#list li {
+  padding: 15px 0px;
+}
+
+#list li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.animate {
+  transform: scale(1) !important;
+}
