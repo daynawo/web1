@@ -57,7 +57,11 @@ body {
 
 /* Style change on hover */
 #list li a:hover {
-  background-color:#6B5CA5
+  background-color:#6B5CA5;
+  padding-left: 56px;
+  padding-right: 56px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 /* Menu animation */
