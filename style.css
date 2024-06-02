@@ -2,13 +2,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #E9C46A;
+  background-color: #c6d8ff;
 }
 
 .header {
   padding: 10px 16px;
-  background: #E76F51;
-  color: #264653;
+  background: #71A9F7;
+  color: #000;
 }
 
 /* Menu words style */
@@ -23,7 +23,7 @@ body {
 #icon {
   cursor: pointer;
   display: block;
-  background-color: #E76F51;
+  background-color: #71A9F7;
   width: 50px;
   padding: 8px 0px;
   font-size: 30px;
@@ -35,7 +35,7 @@ body {
 
 /* Menu list styling */
 #list {
-  background-color: #2A9D8F;
+  background-color: #72195A;
   padding: 25px 0px;
   border-radius: 14px;
   margin-top: 20px;
@@ -57,7 +57,7 @@ body {
 
 /* Style change on hover */
 #list li a:hover {
-  background-color:#264653
+  background-color:#6B5CA5
 }
 
 /* Menu animation */
