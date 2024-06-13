@@ -9,17 +9,29 @@ body {
   padding: 10px 16px;
   background: #71A9F7;
   color: #000;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-/* Menu words style */
+/* Scrolled state */
+.sticky-header.scrolled {
+  background: #71A9F7;
+}
+
+/* Position the menu at the top-right corner */
 .menu {
+  position: fixed;
+  top: 100px;
+  right: 0px;
   list-style: none;
   color: #fff;
   width: 150px;
   text-align: center;
+  z-index: 1001;
 }
 
-/* Toggle styling */
 #icon {
   cursor: pointer;
   display: block;
@@ -27,10 +39,10 @@ body {
   width: 50px;
   padding: 8px 0px;
   font-size: 30px;
-  margin: -5px;
   border-radius: 30px;
   transition: all 0.3s;
   user-select: none;
+  margin: auto;
 }
 
 /* Menu list styling */
@@ -53,18 +65,52 @@ body {
   text-decoration: none;
   color: #fff;
   font-size: 14px;
+  display: block; /* Make the link a block element */
+  padding: 10px 25px; /* Add padding inside the links */
+  width: calc(100% - 50px); /* Ensure the width accounts for padding */
 }
 
 /* Style change on hover */
 #list li a:hover {
-  background-color:#6B5CA5;
-  padding-left: 56px;
-  padding-right: 56px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  background-color: #6B5CA5;
+  padding-left: 25px; /* Adjust padding to maintain size */
+  padding-right: 25px; /* Adjust padding to maintain size */
+  padding-top: 10px; /* Adjust padding to maintain size */
+  padding-bottom: 10px; /* Adjust padding to maintain size */
 }
 
 /* Menu animation */
 .animate {
   transform: scale(1) !important;
+}
+
+/* Center headings and paragraphs */
+h2, p {
+  text-align: center;
+}
+
+/* Optional: Center the container sections as well */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Additional styling for the main container */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Ensure the main container takes full width */
+}
+
+/* Optional: Add some padding for better spacing */
+section {
+  padding: 20px;
+}
+/* Style for the About Me image */
+.about-me-image {
+  max-width: 100%; /* Ensure the image does not overflow the container */
+  height: auto; /* Maintain the aspect ratio */
+  margin: 20px 0; /* Add some margin for spacing */
 }

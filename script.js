@@ -2,17 +2,15 @@ document.addEventListener('DOMContentLoaded', function() {
   var icon = document.getElementById("icon");
   var list = document.getElementById("list");
   if (icon) {
-    icon.addEventListener("click", () => {
-      if(!list.classList.contains("animate"))
-        {
-            icon.style.transform = "rotate(45deg)";
-            list.classList.add("animate");
-        }
-        else{
-            icon.style.transform = "rotate(0deg)";
-            list.classList.remove("animate");
-        }
-    });
+      icon.addEventListener("click", () => {
+          if (!list.classList.contains("animate")) {
+              icon.style.transform = "rotate(45deg)";
+              list.classList.add("animate");
+          } else {
+              icon.style.transform = "rotate(0deg)";
+              list.classList.remove("animate");
+          }
+      });
   }
 });
 
